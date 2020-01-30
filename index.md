@@ -1,7 +1,8 @@
----
-layout: post
-title: Blogging Like a Hacker
----
+	<head>
+		<title>Aram Balagyozyan</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+	</head>
 
 <html>
 <body>
