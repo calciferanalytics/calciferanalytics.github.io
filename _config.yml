@@ -1,2 +1,3 @@
 name: Aram Balagyozyan
 markdow: kramdown
+permalink: /blog/:year/:month/:day/:title
