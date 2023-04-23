@@ -184,39 +184,37 @@ w(A|B) &=\dfrac{1}{\sqrt{2\pi }\sigma _{A}\sqrt{1-\rho ^{2}}}e^{-\dfrac{%
 w(A|B) &=\dfrac{1}{\sqrt{2\pi }\sigma _{A}\sqrt{1-\rho ^{2}}}e^{-\dfrac{1}{2%
 }\left[ \dfrac{v-\rho u}{\sqrt{(1-\rho ^{2})}}\right] ^{2}}
 \end{align}$$
-
 Now express the last equation in terms of original variables *A* and *B*:
-$$\begin{eqnarray*}
-w(A|B) &=&\dfrac{1}{\sqrt{2\pi }\sigma _{A}\sqrt{1-\rho ^{2}}}e^{-\dfrac{1}{2%
+$$\begin{align}
+w(A|B) &=\dfrac{1}{\sqrt{2\pi }\sigma _{A}\sqrt{1-\rho ^{2}}}e^{-\dfrac{1}{2%
 }\left[ \dfrac{\frac{a-\mu _{A}}{\sigma _{A}}-\rho \frac{b-\mu _{B}}{\sigma
 _{B}}}{\sqrt{(1-\rho ^{2})}}\right] ^{2}} \\
-w(A|B) &=&\dfrac{1}{\sqrt{2\pi }\sigma _{A}\sqrt{1-\rho ^{2}}}e^{-\dfrac{1}{2%
+w(A|B) &=\dfrac{1}{\sqrt{2\pi }\sigma _{A}\sqrt{1-\rho ^{2}}}e^{-\dfrac{1}{2%
 }\left[ \dfrac{a-\{\mu _{A}+\rho \dfrac{\sigma _{A}}{\sigma _{B}}(b-\mu
 _{B})\}}{\sigma _{A}\sqrt{(1-\rho ^{2})}}\right] ^{2}}
-\end{eqnarray}$$
-
+\end{align}$$
 From the above, it must be clear that conditional on *B*, *A* is normally distributed with mean 
-$$ \begin{eqnarray}
-\mu _{A|B} &=&\mu _{A}+\rho \frac{\sigma _{A}}{\sigma _{B}}(b-\mu _{B})\\
+$$ \begin{align}
+\mu _{A|B} &=\mu _{A}+\rho \frac{\sigma _{A}}{\sigma _{B}}(b-\mu _{B})\\
 &\Downarrow &  \nonumber \\
-\mu _{A|B} &=&\mu _{A}+\frac{\sigma _{AB}}{\sigma _{B}\sigma _{A}}\frac{%
+\mu _{A|B} &=\mu _{A}+\frac{\sigma _{AB}}{\sigma _{B}\sigma _{A}}\frac{%
 \sigma _{A}}{\sigma _{B}}(b-\mu _{B})  \nonumber \\
 &\Downarrow &  \nonumber \\
-\mu _{A|B} &=&\mu _{A}+\frac{\sigma _{AB}}{\sigma _{B}^{2}}(b-\mu _{B}) 
+\mu _{A|B} &=\mu _{A}+\frac{\sigma _{AB}}{\sigma _{B}^{2}}(b-\mu _{B}) 
 \nonumber
-\end{eqnarray} $$
+\end{align} $$
 and variance
-$$ \begin{eqnarray}
-\sigma _{A|B}^{2} &=&\sigma _{A}^{2}(1-\rho ^{2}) \\
-&\Downarrow &  \nonumber \\
-\sigma _{A|B}^{2} &=&\sigma _{A}^{2}-\rho ^{2}\sigma _{A}^{2}  \nonumber \\
-&\Downarrow &  \nonumber \\
-\sigma _{A|B}^{2} &=&\sigma _{A}^{2}-\frac{\sigma _{AB}^{2}}{\sigma
+$$ \begin{align}
+\sigma _{A|B}^{2} &=\sigma _{A}^{2}(1-\rho ^{2}) \\
+&\Downarrow    \\
+\sigma _{A|B}^{2} &=\sigma _{A}^{2}-\rho ^{2}\sigma _{A}^{2}  \nonumber \\
+&\Downarrow    \\
+\sigma _{A|B}^{2} &=\sigma _{A}^{2}-\frac{\sigma _{AB}^{2}}{\sigma
 _{B}^{2}\sigma _{A}^{2}}\sigma _{A}^{2}  \nonumber \\
-&\Downarrow &  \nonumber \\
-\sigma _{A|B}^{2} &=&\sigma _{A}^{2}-\frac{\sigma _{AB}^{2}}{\sigma _{B}^{2}}
+&\Downarrow  \\
+\sigma _{A|B}^{2} &=\sigma _{A}^{2}-\frac{\sigma _{AB}^{2}}{\sigma _{B}^{2}}
 \nonumber
-\end{eqnarray}$$
+\end{align}$$
 
 *Q.E.D*
 
