@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Aram Balagyozyan, Launches Site"
+title: "Aram Balagyozyan Launches Site"
 date: 2020-01-29
 ---
 
