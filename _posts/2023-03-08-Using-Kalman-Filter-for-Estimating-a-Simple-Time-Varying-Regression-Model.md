@@ -24,7 +24,7 @@ $$
 The idea of Kalman FIlter is pretty straight-forward and consists of two steps:
 1. **Prediction:** At the beginning of time $t$ we may want to form an
 optimal predictor of $y_{t}$ based on all the available information up to
-time $t-1:$ $y_{t|t-1}$. To do this we need to calculate \ $\beta _{t|t-1}$
+time $t-1:$ $y_{t|t-1}$. To do this we need to calculate $\beta _{t|t-1}$
 2.  **Updating**: Once $y_{t}$ is realized at the end of time $t$, the
 prediction error can be calculated: $\eta _{t|t-1}=y_{t}-y_{t|t-1}$. This
 prediction error contains new information about $\beta _{t}$ beyond that
@@ -49,7 +49,7 @@ where
 * $P_{t|t-1}=E(\beta _{t}-\beta _{t|t-1})^{2}$ \ - variance of $\beta _{t}$ conditional on information up to $t-1$
 * $P_{t|t}=E(\beta _{t}-\beta _{t|t})^{2}$ \ - variance of $\beta _{t\text{ }}$ conditional on information up to $t$
 * $\eta _{t|t-1}=y_{t}-y_{t|t-1}$ - prediction error
-* $f_{t|t-1}=E[\eta _{t|t-1}^{2}]$ - conditional variance of prediction error
+* $f_{t|t-1}=E(\eta _{t|t-1}^{2})$ - conditional variance of prediction error
 
 2. **Updating**
 $$ \begin{align}
@@ -64,15 +64,15 @@ Provided that eigenvalues of $F$ are all inside the unit circle, then the
 process for $\beta _{t}$ in equation (3) is is covariance-stationary and thus the derivation of equation (5) is straight-forward. Equation (6) can be derived as follows:
 
 $$ \begin{align}
-P_{t|t-1} &=E_{t-1}(\beta _{t}-\beta _{t|t-1})^{2}
-\\
+P_{t|t-1} &=E_{t-1}(\beta _{t}-\beta _{t|t-1})^{2}\\
 &=E_{t-1}(\mu +F\beta _{t-1}+v_{t}-\mu -F\beta _{t-1|t-1})^{2}  \\
 &=E_{t-1}(F\beta _{t-1}+v_{t}-F\beta _{t-1|t-1})^{2}   \\
-&=E_{t-1}(F(\beta _{t-1}-\beta _{t-1|t-1})+v_{t})^{2}  \\
-&=F^{2}E_{t-1}(\beta _{t-1}-\beta _{t-1|t-1})^{2}+Q   \\
+&=E_{t-1}(F(\beta _{t-1}-\beta _{t-1|t-1})+v_{t})^{2}  ||
+&=F^{2}E_{t-1}(\beta _{t-1}-\beta _{t-1|t-1})^{2}+Q   ||
 &=F^{2}E_{t-1}P_{t-1|t-1}+Q 
 \end{align}
 $$
+
 Since $E_{t-1}[\eta _{t|}]=0$ , equation (8) can be derived in the following way:
 $$\begin{align}
 f_{t|t-1} &=E_{t-1}(\eta _{t|t-1}^{2})=E_{t-1}(y_{t}-y_{t|t-1})^{2} \\
