@@ -2,6 +2,7 @@
 layout: post
 title: "Derivation of the Kalman Filtering Equations for a Time-varying Intercept Simple Linear Regression Model"
 date: 2023-04-22
+use_math: true
 ---
 
 Some of the most useful and interesting applications of Kalman filter in economics and finance are in the context of multivariate models. However, the method is best understood when introduced in the context of a simple, univariate model. Therefore, the goal of this post is to introduce the reader to the concept of the Kalman filter using a very simple, univariate regression model. 
