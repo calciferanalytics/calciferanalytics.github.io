@@ -165,7 +165,7 @@ and marginal density function of *B* as
 $$ g(B)=\frac{1}{\sqrt{2\pi}\sigma_B}\exp \left(-\frac{1}{2} \left(u^2 \right)\right) $$
 Now for any two random variables *A* and *B*, conditional density $w(A|B)=\dfrac{f(A,B)}{g(B)}$ .  Using the two formulas above, the conditional density formula can be rewritten as:
 
-$$\begin{eqnarray*}
+$$\begin{eqnarray}
 w(A|B) &=&\frac{\dfrac{1}{2\pi \sigma _{B}\sigma _{A}\sqrt{1-\rho ^{2}}}e^{-%
 \dfrac{1}{2(1-\rho ^{2})}[u^{2}-2\rho uv+v^{2}]}}{\dfrac{1}{\sqrt{2\pi }%
 \sigma _{B}}e^{-\dfrac{1}{2}u^{2}}} \\
@@ -191,7 +191,7 @@ _{B}}}{\sqrt{(1-\rho ^{2})}}\right] ^{2}} \\
 w(A|B) &=&\dfrac{1}{\sqrt{2\pi }\sigma _{A}\sqrt{1-\rho ^{2}}}e^{-\dfrac{1}{2%
 }\left[ \dfrac{a-\{\mu _{A}+\rho \dfrac{\sigma _{A}}{\sigma _{B}}(b-\mu
 _{B})\}}{\sigma _{A}\sqrt{(1-\rho ^{2})}}\right] ^{2}}
-\end{eqnarray*}$$
+\end{eqnarray}$$
 From the above, it must be clear that conditional on *B*, *A* is normally distributed with mean 
 $$ \begin{eqnarray}
 \mu _{A|B} &=&\mu _{A}+\rho \frac{\sigma _{A}}{\sigma _{B}}(b-\mu _{B})\\
